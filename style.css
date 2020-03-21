@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* overflow: hidden; */
 }
 body {
 	font-family: "Open Sans", sans-serif;
@@ -26,14 +27,15 @@ header {
 }
 .cta:hover {
 	background: #851e3e;
+	cursor: pointer;
 }
+
 a {
 	color: #fff;
 	text-decoration: none;
+	cursor: pointer;
 }
-a:hover {
-	text-decoration: underline;
-}
+
 h2 {
 	font-weight: 400;
 }
@@ -77,14 +79,16 @@ nav ul li a:hover {
 	font-family: "Pacifico", cursive;
 }
 .hero h3 {
-  font-weight: 300;
+	font-weight: 300;
 	padding: 3rem 0 2rem 0;
 	letter-spacing: 0.2rem;
 }
 .project-button :hover {
 	text-decoration: none;
 }
-
+.logo {
+	height: 6rem;
+}
 /* about me section */
 .about {
 	min-height: 50vh;
@@ -99,29 +103,141 @@ nav ul li a:hover {
 	/* text-align: center; */
 	line-height: 1.5rem;
 }
-/* PORFOLIO SECTION */
+
+/* portfolio grid */
+.projects {
+	background: #f4f4f8;
+}
+.projects h2 {
+	text-align: center;
+}
 .portfolio {
-	text-align: center;
-	min-height: 50vh;
-	padding: 6rem 2rem 0 2rem;
-	text-align: right;
-}
-.portfolio h2 {
-	padding-bottom: 2rem;
-}
-.portfolio p {
-	padding-bottom: 2rem;
-	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 2px;
+	grid-row-gap: 20px;
+	padding: 1rem;
+	grid-auto-flow: row;
+	overflow: hidden;
 }
 
-/* contact form section */
+.card {
+	display: flex;
+	flex-direction: column;
+	/* border: 0.05rem solid rgb(196, 190, 190); */
+	border-radius: 1rem;
+	box-shadow: 1rem -0.4rem 0.5rem 0rem rgba(0, 0, 0, 0.041);
+	height: 40vh;
+	justify-content: center;
+	align-items: center;
+	width: 10rem;
+}
+.card h2 {
+	font-size: 1rem;
+}
+.card img {
+	width: 100%;
+}
+.card button {
+	padding: 5px 15px;
+	border: none;
+	border-radius: 30px;
+	margin-top: 1rem;
+	color: #fff;
+	background: #fe4a49;
+	font-size: 1rem;
+}
+/* skills */
+.qualifications {
+	background: #24022f;
+	color: rgb(233, 233, 233);
+	padding: 2rem;
+}
+.qualifications h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	padding-bottom: 0.8rem;
+	border-bottom: 0.1rem solid #fe4a49;
+}
+.qualifications .skill-cards {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+.skill-card {
+	border: 1px solid #fff;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.skill-card p {
+	text-align: right;
+}
+#icon {
+	color: #fe4a49;
+	font-size: 3rem;
+}
+/* contact form */
 .contact {
-	border: 1px solid black;
-	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6rem;
 }
-.contact h2 {
+.contact-form {
+	/* border: 1px solid #000000; */
+	width: 100%;
 	text-align: center;
 }
-.contact form label {
-	text-align: center;
+.contact-form h2 {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+.contact-form input:focus {
+	border: 1px solid #fe4a49;
+}
+input {
+	margin-bottom: 1rem;
+	border: none;
+	font-size: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	width: 80%;
+}
+
+.contact-icons {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	padding-top: 3rem;
+}
+.footer-icon {
+	color: #df0d0da6;
+	font-size: 2rem;
+	margin-left: 3rem;
+}
+
+.icon-1:hover {
+	color: #4b86b4;
+}
+.icon-2:hover {
+	color: #d2e7ff;
+}
+.icon-3:hover {
+	color: #000;
+}
+.icon-4:hover {
+	color: #d62d20;
+}
+/* footer section */
+footer {
+	min-height: 20vh;
+	background: #bbbbbb;
+	margin-top: 10rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
