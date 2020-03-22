@@ -54,7 +54,7 @@ nav ul {
 }
 nav ul li {
 	list-style: none;
-	padding-right: 2rem;
+	/* padding-right: 2rem; */
 }
 nav ul li a {
 	color: #caacac;
