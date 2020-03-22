@@ -24,7 +24,6 @@ header {
 	color: #fff;
 	background: #fe4a49;
 	font-size: 1.3rem;
-
 }
 .cta:hover {
 	background: #851e3e;
@@ -115,7 +114,6 @@ nav ul li a:hover {
 .projects h2 {
 	text-align: center;
 	padding-bottom: 4rem;
-
 }
 .portfolio {
 	display: grid;
@@ -167,16 +165,16 @@ nav ul li a:hover {
 	border-bottom: 0.1rem solid #fe4a49;
 }
 .qualifications .skill-cards {
-	display: flex;
-	flex-direction: column;
 	padding-top: 1rem;
 }
 .skill-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	border: 1px solid #fff;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	margin-bottom: 1rem;
-	position: relative;
 }
 .skill-card p {
 	text-align: right;
@@ -184,6 +182,11 @@ nav ul li a:hover {
 #icon {
 	color: #fe4a49;
 	font-size: 3rem;
+}
+.card-4 {
+	font-size: 0.8rem;
+	text-align: center;
+
 }
 /* contact form */
 .contact {
